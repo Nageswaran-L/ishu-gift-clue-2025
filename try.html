@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gift Clue Reveal</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f8f9fa;
+        }
+        .container {
+            margin-top: 50px;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            justify-content: center;
+            align-items: center;
+            max-width: 300px;
+            margin: auto;
+        }
+        .number {
+            display: flex;
+            width: 100px;
+            height: 100px;
+            justify-content: center;
+            align-items: center;
+            border-radius: 10px;
+            color: white;
+            font-size: 24px;
+            cursor: pointer;
+            text-align: center;
+            font-weight: bold;
+        }
+        .clue {
+            margin-top: 20px;
+            font-size: 18px;
+            font-weight: bold;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Choose a Number to Reveal a Clue</h2>
+        <div class="grid">
+            <div class="number" style="background-color: silver;" onclick="revealClue(1)">1</div>
+            <div class="number" style="background-color: red;" onclick="revealClue(2)">2</div>
+            <div class="number" style="background-color: blue;" onclick="revealClue(3)">3</div>
+            <div class="number" style="background-color: pink;" onclick="revealClue(4)">4</div>
+            <div class="number" style="background-color: brown;" onclick="revealClue(5)">5</div>
+            <div class="number" style="background-color: gold;" onclick="revealClue(6)">6</div>
+            <div class="number" style="background-color: purple;" onclick="revealClue(7)">7</div>
+            <div class="number" style="background-color: green;" onclick="revealClue(8)">8</div>
+        </div>
+        <p id="clue" class="clue"></p>
+    </div>
+
+    <script>
+        const clues = {
+            1: "I wrap around softly, dancing with every step. A tiny whisper of me, always close to you.",
+            2: "I stay awake when you sleep, count when you move, and remind you of moments that matter.",
+            3: "I bring warmth, comfort, and a piece of a land far away, wrapping you in its essence.",
+            4: "A stroke of magic, bold or light, leaving traces of love in every sight.",
+            5: "I’m as sweet as your laughter, as smooth as your charm. A spoonful of me brings pure delight.",
+            6: "I may be small, but I shine bright, sitting close to you, catching every light.",
+            7: "I may not speak, but I listen well. A tight squeeze, and I chase away your worries.",
+            8: "A surprise awaits, wrapped with love. A little patience, and you’ll know what’s above!"
+        };
+
+        function revealClue(number) {
+            document.getElementById("clue").innerText = clues[number];
+            document.getElementById("clue").style.display = "block";
+        }
+    </script>
+</body>
+</html>
