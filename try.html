@@ -8,7 +8,9 @@
         body {
             font-family: Arial, sans-serif;
             text-align: center;
-            background-color: #f8f9fa;
+            background: url('https://drive.google.com/file/d/1NT8Qdbes48elv-4kHY0dJGzfl-kcWCNj/view?usp=sharing') repeat;
+            background-color: rosybrown;
+            color: black;
         }
         .container {
             margin-top: 50px;
@@ -29,7 +31,7 @@
             justify-content: center;
             align-items: center;
             border-radius: 10px;
-            color: white;
+            color: black;
             font-size: 24px;
             cursor: pointer;
             text-align: center;
@@ -45,16 +47,17 @@
 </head>
 <body>
     <div class="container">
+		<h2>I LOVE YOU
         <h2>Choose a Number to Reveal a Clue</h2>
         <div class="grid">
             <div class="number" style="background-color: silver;" onclick="revealClue(1)">1</div>
             <div class="number" style="background-color: red;" onclick="revealClue(2)">2</div>
-            <div class="number" style="background-color: blue;" onclick="revealClue(3)">3</div>
+            <div class="number" style="background-color: bisque;" onclick="revealClue(3)">3</div>
             <div class="number" style="background-color: pink;" onclick="revealClue(4)">4</div>
             <div class="number" style="background-color: brown;" onclick="revealClue(5)">5</div>
             <div class="number" style="background-color: gold;" onclick="revealClue(6)">6</div>
             <div class="number" style="background-color: purple;" onclick="revealClue(7)">7</div>
-            <div class="number" style="background-color: green;" onclick="revealClue(8)">8</div>
+            <div class="number" style="background-color: greenyellow;" onclick="revealClue(8)">8</div>
         </div>
         <p id="clue" class="clue"></p>
     </div>
@@ -64,11 +67,11 @@
             1: "I wrap around softly, dancing with every step. A tiny whisper of me, always close to you.",
             2: "I stay awake when you sleep, count when you move, and remind you of moments that matter.",
             3: "I bring warmth, comfort, and a piece of a land far away, wrapping you in its essence.",
-            4: "A stroke of magic, bold or light, leaving traces of love in every sight.",
-            5: "I’m as sweet as your laughter, as smooth as your charm. A spoonful of me brings pure delight.",
+            4: "A stroke of magic, leaving traces of love in every sight!",
+            5: "Sweet like you, with a special touch, spread the love, but not too much!",
             6: "I may be small, but I shine bright, sitting close to you, catching every light.",
-            7: "I may not speak, but I listen well. A tight squeeze, and I chase away your worries.",
-            8: "A surprise awaits, wrapped with love. A little patience, and you’ll know what’s above!"
+            7: "I can keep you company through the night, with a tiny reminder of your passion!",
+            8: "I stand still, give you power, and keep you ready for every moment!"
         };
 
         function revealClue(number) {
